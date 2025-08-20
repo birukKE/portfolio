@@ -26,9 +26,7 @@ function checkScreepSpot(){
 
         experience__link.style.color = "black"
         experience__link.style.fontSize = ""
-        // document.querySelectorAll('.column__one ul li a')[0].style.setProperty('--before-width', '30px')
-        // document.querySelectorAll('.column__one ul li a')[1].style.setProperty('--before-width', '30px')
-
+        
         education_link.style.color = "black"
         education_link.style.fontSize = ""
         
@@ -38,10 +36,7 @@ function checkScreepSpot(){
     }else if(Math.abs(education.getBoundingClientRect().top) < Math.abs(experience.getBoundingClientRect().top)){
         education_link.style.color = "#1b1446"
         education_link.style.fontSize = "1.2em";
-        // document.querySelectorAll('.column__one ul li a')[0].style.setProperty('--before-width', '60px')
-        // document.querySelectorAll('.column__one ul li a')[1].style.setProperty('--before-width', '30px')
-        // document.querySelectorAll('.column__one ul li a')[2].style.setProperty('--before-width', '30px')
-
+       
 
         experience__link.style.color = "black"
         experience__link.style.fontSize = ""
@@ -56,16 +51,12 @@ function checkScreepSpot(){
     }else if(Math.abs(education.getBoundingClientRect().top) > Math.abs(experience.getBoundingClientRect().top)){
         experience__link.style.color = "#1b1446"
         experience__link.style.fontSize = "1.2em";
-        // document.querySelectorAll('.column__one ul li a')[1].style.setProperty('--before-width', '60px')
-        // document.querySelectorAll('.column__one ul li a')[2].style.setProperty('--before-width', '30px')
-
+        
         education_link.style.color = "black"
         education_link.style.fontSize = ""
 
         project__link.style.color = "black"
         project__link.style.fontSize = ""
-        // document.querySelectorAll('.column__one ul li a')[0].style.setProperty('--before-width', '30px')
-        // document.querySelectorAll('.column__one ul li a')[2].style.setProperty('--before-width', '30px')
         
         experience.style.background = "#498672ff"
         education.style.background = ""
@@ -102,46 +93,3 @@ form.addEventListener('submit', (e)=>{
     sendMail();
 
 })
-
-
-
-
-
-
-
-
-// 
-// // Create a test account or replace with real credentials.
-// const transporter = nodemailer.createTransport({
-//     // service: 'gmail',
-//     host: "smtp.gmail.com",
-//     port: 587,
-//     secure: false, // true for 465, false for other ports
-//     auth: {
-//         // user: process.env.USER,
-//         // pass: process.env.APP_PASSWORD,
-//         user: "1birukde@gmail.com",
-//         pass: "9mepmsbm",
-//     },
-// });
-// 
-// 
-// form.addEventListener('submit', (e)=>{
-//     alert("LOL")
-//     e.preventDefault()
-// 
-//     (async () => { 
-// 
-//         const info = await transporter.sendMail({
-//         from: "Biruk <1birukde@gmail.com>",
-//         to: "1birukde@gmail.com",
-//         subject: "New contact made from portfolio!",
-//         text: `Message from: ${name.value} \n ${email.value} \n\n ${message.value}`, // plain?text body
-//         // console.log("Message sent:", info.messageId)
-//     });
-// 
-//  })();
-// })
-//     
-
-
